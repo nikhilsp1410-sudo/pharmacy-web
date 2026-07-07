@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Raghavendra Medicals</title>
+    <meta name="description" content="Your trusted local pharmacy providing medicines, health advice, and care for the community.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round">
+                        <path d="M12 4v16m-8-8h16"/>
+                    </svg>
+                </div>
+                <span class="logo-text" data-en="Shree Raghavendra Medicals" data-kn="ಶ್ರೀ ರಾಘವೇಂದ್ರ ಮೆಡಿಕಲ್ಸ್">Shree Raghavendra Medicals</span>
+            </a>
+            
+            <div class="nav-right-group">
+                <nav class="nav-links">
+                    <a href="#services" class="nav-link" data-en="Services" data-kn="ಸೇವೆಗಳು">Services</a>
+                    <a href="#gallery" class="nav-link" data-en="Gallery" data-kn="ಗ್ಯಾಲರಿ">Gallery</a>
+                    <a href="#contact" class="nav-link" data-en="Contact" data-kn="ಸಂಪರ್ಕಿಸಿ">Contact</a>
+                </nav>
+                
+                <div class="lang-toggle">
+                    <span id="lang-en" class="active-lang" onclick="switchLanguage('en')">EN</span>
+                    <span id="lang-kn" onclick="switchLanguage('kn')">ಕನ್ನಡ</span>
+                </div>
+
+                <a href="tel:+919480053759" class="btn btn-primary desktop-only" aria-label="Call Shree Raghavendra Medicals Now" data-en="<i class='fa-solid fa-phone'></i> Call Now" data-kn="<i class='fa-solid fa-phone'></i> ಕರೆ ಮಾಡಿ"><i class="fa-solid fa-phone"></i> Call Now</a>
+
+                <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="section-label" data-en="Harugeri's Trusted Pharmacy" data-kn="ಹಾರುಗೇರಿಯ ನಂಬಿಕಾರ್ಹ ಔಷಧಾಲಯ">Harugeri's Trusted Pharmacy</span>
+                <h1 data-en="Your Health,<br><span>Our Priority</span>" data-kn="ನಿಮ್ಮ ಆರೋಗ್ಯವೇ,<br><span>ನಮ್ಮ ಆದ್ಯತೆ</span>">Your Health,<br><span>Our Priority</span></h1>
+                <p data-en="We provide essential medicines, veterinary supplies, and expert care — right in the heart of your community." data-kn="ನಾವು ನಿಮ್ಮ ಸಮುದಾಯದ ಹೃದಯಭಾಗದಲ್ಲಿ ಅಗತ್ಯ ಔಷಧಗಳು, ಪಶುವೈದ್ಯಕೀಯ ಸರಬರಾಜುಗಳು ಮತ್ತು ತಜ್ಞರ ಕಾಳಜಿಯನ್ನು ಒದಗಿಸುತ್ತೇವೆ.">We provide essential medicines, veterinary supplies, and expert care — right in the heart of your community.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-en="Find Our Store" data-kn="ನಮ್ಮ ಅಂಗಡಿಯನ್ನು ಹುಡುಕಿ">Find Our Store</a>
+                    <a href="https://wa.me/919480053759" class="btn btn-secondary" target="_blank" aria-label="Message us on WhatsApp" data-en="<i class='fa-brands fa-whatsapp' style='color:#25D366'></i> WhatsApp Us" data-kn="<i class='fa-brands fa-whatsapp' style='color:#25D366'></i> ವಾಟ್ಸಾಪ್ ಮಾಡಿ">
+                        <i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp Us
+                    </a>
+                </div>
+                
+                <div class="hero-offers reveal">
+                    <div class="offer-badge badge-discount">
+                        <i class="fa-solid fa-tag"></i> 
+                        <span data-en="10% Off on Medicines" data-kn="ಔಷಧಗಳ ಮೇಲೆ 10% ರಿಯಾಯಿತಿ">10% Off on Medicines</span>
+                    </div>
+                    <div class="offer-badge badge-delivery">
+                        <i class="fa-solid fa-truck-fast"></i> 
+                        <span data-en="Free Home Delivery (₹1000+)" data-kn="ಉಚಿತ ಮನೆ ವಿತರಣೆ (₹1000+)">Free Home Delivery (₹1000+)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal">
+                <div class="hero-shape"></div>
+                <div class="hero-img-box">
+                    <img src="assets/hero.png" alt="Clean and bright pharmacy interior" class="hero-image" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container text-center">
+            <span class="section-label" data-en="What We Offer" data-kn="ನಾವು ಏನು ನೀಡುತ್ತೇವೆ">What We Offer</span>
+            <h2 class="section-title reveal" data-en="Comprehensive Care Solutions" data-kn="ಸಮಗ್ರ ಆರೈಕೆ ಪರಿಹಾರಗಳು">Comprehensive Care Solutions</h2>
+            <p class="section-subtitle reveal" data-en="Everything your family and farm needs, conveniently located under one roof." data-kn="ನಿಮ್ಮ ಕುಟುಂಬ ಮತ್ತು ಜಮೀನಿಗೆ ಬೇಕಾದ ಎಲ್ಲವೂ ಒಂದೇ ಸೂರಿನಡಿ ಅನುಕೂಲಕರವಾಗಿ ಲಭ್ಯವಿದೆ.">Everything your family and farm needs, conveniently located under one roof.</p>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-pills"></i></div>
+                    <h3 data-en="Prescription Medicines" data-kn="ಸೂಚಿಸಿದ ಔಷಧಗಳು">Prescription Medicines</h3>
+                    <p data-en="All major brands and generic alternatives available. Bring your prescription and we'll have it ready." data-kn="ಎಲ್ಲಾ ಪ್ರಮುಖ ಬ್ರಾಂಡ್‌ಗಳು ಮತ್ತು ಜೆನೆರಿಕ್ ಔಷಧಗಳು ಲಭ್ಯವಿದೆ. ನಿಮ್ಮ ಚೀಟಿಯನ್ನು ತನ್ನಿ ಮತ್ತು ನಾವು ಅದನ್ನು ಸಿದ್ಧವಾಗಿರಿಸುತ್ತೇವೆ.">All major brands and generic alternatives available. Bring your prescription and we'll have it ready.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-leaf"></i></div>
+                    <h3 data-en="OTC & Ayurvedic" data-kn="ಸಾಮಾನ್ಯ ಹಾಗೂ ಆಯುರ್ವೇದ">OTC & Ayurvedic</h3>
+                    <p data-en="Over-the-counter medicines, herbal supplements, and traditional Ayurvedic remedies stocked fresh." data-kn="ಸಾಮಾನ್ಯ ಔಷಧಗಳು, ಗಿಡಮೂಲಿಕೆ ಪೂರಕಗಳು ಮತ್ತು ಸಾಂಪ್ರದಾಯಿಕ ಆಯುರ್ವೇದ ಪರಿಹಾರಗಳು ಲಭ್ಯವಿದೆ.">Over-the-counter medicines, herbal supplements, and traditional Ayurvedic remedies stocked fresh.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-cow"></i></div>
+                    <h3 data-en="Veterinary Supplies" data-kn="ಪಶುವೈದ್ಯಕೀಯ ಪೂರೈಕೆಗಳು">Veterinary Supplies</h3>
+                    <p data-en="Medicines and supplements for cows, goats, and poultry — serving the farming community." data-kn="ಹಸು, ಮೇಕೆ ಮತ್ತು ಕೋಳಿಗಳಿಗೆ ಔಷಧಗಳು ಮತ್ತು ಪೂರಕಗಳು — ರೈತ ಸಮುದಾಯಕ್ಕೆ ಸೇವೆ.">Medicines and supplements for cows, goats, and poultry — serving the farming community.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-spa"></i></div>
+                    <h3 data-en="Health & Wellness" data-kn="ಆರೋಗ್ಯ ಮತ್ತು ಸ್ವಾಸ್ಥ್ಯ">Health & Wellness</h3>
+                    <p data-en="Vitamins, protein supplements, skincare, and baby care products for the whole family." data-kn="ಇಡೀ ಕುಟುಂಬಕ್ಕೆ ವಿಟಮಿನ್‌ಗಳು, ಪ್ರೋಟೀನ್ ಪೂರಕಗಳು, ತ್ವಚೆ ಆರೈಕೆ ಮತ್ತು ಮಕ್ಕಳ ಆರೈಕೆ ಉತ್ಪನ್ನಗಳು.">Vitamins, protein supplements, skincare, and baby care products for the whole family.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3 data-en="General Store" data-kn="ಜನರಲ್ ಸ್ಟೋರ್">General Store</h3>
+                    <p data-en="Everyday grocery and household essentials — a true one-stop shop for the neighbourhood." data-kn="ದೈನಂದಿನ ದಿನಸಿ ಮತ್ತು ಗೃಹಬಳಕೆಯ ಅಗತ್ಯ ವಸ್ತುಗಳು — ನೆರೆಹೊರೆಯವರಿಗೆ ನಿಜವಾದ ಒಂದು-ನಿಲುಗಡೆ ಅಂಗಡಿ.">Everyday grocery and household essentials — a true one-stop shop for the neighbourhood.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3 data-en="Medical Devices" data-kn="ವೈದ್ಯಕೀಯ ಸಾಧನಗಳು">Medical Devices</h3>
+                    <p data-en="BP monitors, glucometers, thermometers, and surgical supplies for home healthcare needs." data-kn="ಮನೆಯ ಆರೋಗ್ಯದ ಅಗತ್ಯಗಳಿಗಾಗಿ ಬಿಪಿ ಮಾನಿಟರ್‌ಗಳು, ಗ್ಲುಕೋಮೀಟರ್‌ಗಳು, ಥರ್ಮಾಮೀಟರ್‌ಗಳು ಮತ್ತು ಶಸ್ತ್ರಚಿಕಿತ್ಸಾ ಪೂರೈಕೆಗಳು.">BP monitors, glucometers, thermometers, and surgical supplies for home healthcare needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner reveal">
+        <div class="container">
+            <div class="banner-inner">
+                <div>
+                    <h2 data-en="Can't find a specific medicine?" data-kn="ನಿರ್ದಿಷ್ಟ ಔಷಧಿಯನ್ನು ಹುಡುಕಲು ಸಾಧ್ಯವಿಲ್ಲವೇ?">Can't find a specific medicine?</h2>
+                    <p data-en="Send us your prescription on WhatsApp and we will order it for you." data-kn="ನಿಮ್ಮ ವೈದ್ಯಕೀಯ ಚೀಟಿಯನ್ನು ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಕಳುಹಿಸಿ ಮತ್ತು ನಾವು ಅದನ್ನು ನಿಮಗಾಗಿ ಆರ್ಡರ್ ಮಾಡುತ್ತೇವೆ.">Send us your prescription on WhatsApp and we will order it for you.</p>
+                </div>
+                <a href="https://wa.me/919480053759" class="btn btn-whatsapp" data-en="<i class='fa-brands fa-whatsapp'></i> Send Prescription" data-kn="<i class='fa-brands fa-whatsapp'></i> ಚೀಟಿಯನ್ನು ಕಳುಹಿಸಿ"><i class="fa-brands fa-whatsapp"></i> Send Prescription</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container text-center">
+            <span class="section-label" data-en="Our Store" data-kn="ನಮ್ಮ ಸ್ಟೋರ್">Our Store</span>
+            <h2 class="section-title reveal" data-en="Take a Look Inside" data-kn="ಒಳನೋಟ">Take a Look Inside</h2>
+            <p class="section-subtitle reveal" data-en="Clean, organized, and fully stocked for your convenience." data-kn="ನಿಮ್ಮ ಅನುಕೂಲಕ್ಕಾಗಿ ಸ್ವಚ್ಛ, ವ್ಯವಸ್ಥಿತ ಮತ್ತು ಸಂಪೂರ್ಣವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ.">Clean, organized, and fully stocked for your convenience.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" onclick="openLightbox(0)">
+                    <img src="assets/shop1.jpg" alt="Inside Shree Raghavendra Medicals - View 1" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(1)">
+                    <img src="assets/shop2.jpg" alt="Inside Shree Raghavendra Medicals - View 2" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(2)">
+                    <img src="assets/shop3.jpg" alt="Inside Shree Raghavendra Medicals - View 3" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label" data-en="Get in Touch" data-kn="ಸಂಪರ್ಕಿಸಿ">Get in Touch</span>
+                <h2 class="section-title reveal" data-en="Visit Us Today" data-kn="ಇಂದೇ ಭೇಟಿ ನೀಡಿ">Visit Us Today</h2>
+            </div>
+            
+            <div class="contact-wrapper reveal">
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <strong data-en="Store Location" data-kn="ಅಂಗಡಿ ವಿಳಾಸ">Store Location</strong>
+                            <span data-en="Shree Raghavendra Medicals, Harugeri – 591220. Tq: Raybag, Dist: Belgavi, Karnataka" data-kn="ಶ್ರೀ ರಾಘವೇಂದ್ರ ಮೆಡಿಕಲ್ಸ್, ಹಾರುಗೇರಿ – 591220. ತಾ: ರಾಯಬಾಗ, ಜಿ: ಬೆಳಗಾವಿ, ಕರ್ನಾಟಕ">Shree Raghavendra Medicals, Harugeri – 591220. Tq: Raybag, Dist: Belgavi, Karnataka</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <strong data-en="Contact Number" data-kn="ಸಂಪರ್ಕ ಸಂಖ್ಯೆ">Contact Number</strong>
+                            <a href="tel:+919480053759">+91 94800 53759</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+                        <div>
+                            <strong data-en="Business Hours" data-kn="ವೇಳಾಪಟ್ಟಿ">Business Hours</strong>
+                            <span data-en="Monday – Saturday: 8:00 AM – 9:00 PM<br>Sunday: 9:00 AM – 2:00 PM" data-kn="ಸೋಮವಾರ – ಶನಿವಾರ: ಬೆಳಿಗ್ಗೆ 8:00 – ರಾತ್ರಿ 9:00<br>ಭಾನುವಾರ: ಬೆಳಿಗ್ಗೆ 9:00 – ಮಧ್ಯಾಹ್ನ 2:00">Monday – Saturday: 8:00 AM – 9:00 PM<br>Sunday: 9:00 AM – 2:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.0!2d75.1!3d16.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDIxJzAwLjAiTiA3NcKwMDYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin" allowfullscreen loading="lazy" title="Store Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightboxOutside(event)">
+        <button class="lightbox-close" aria-label="Close lightbox" onclick="closeLightbox()">✕</button>
+        <button class="lb-arrow lb-prev" aria-label="Previous image" onclick="shiftLightbox(-1)">‹</button>
+        <img id="lb-img" src="" alt="Gallery Image">
+        <button class="lb-arrow lb-next" aria-label="Next image" onclick="shiftLightbox(1)">›</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" style="width:28px;height:28px;">
+                    <path d="M12 4v16m-8-8h16"/>
+                </svg> 
+                <span data-en="Shree Raghavendra Medicals" data-kn="ಶ್ರೀ ರಾಘವೇಂದ್ರ ಮೆಡಿಕಲ್ಸ್">Shree Raghavendra Medicals</span>
+            </div>
+            <p class="footer-text" data-en="&copy; <span id='year'></span> Shree Raghavendra Medicals. All rights reserved." data-kn="&copy; <span id='year'></span> ಶ್ರೀ ರಾಘವೇಂದ್ರ ಮೆಡಿಕಲ್ಸ್. ಎಲ್ಲ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.">&copy; <span id="year"></span> Shree Raghavendra Medicals. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Visit our Facebook page" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/919480053759" class="social-icon" aria-label="Message us on WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/raghavendra_medical_harugeri" class="social-icon" aria-label="Visit our Instagram page" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
